@@ -22,12 +22,11 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlinx:kotlinx-html-jvm:0.7.3")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("io.ktor:ktor-server-cio:$ktor_version")
     implementation("io.ktor:ktor-gson:$ktor_version")
+    implementation("io.ktor:ktor-html-builder:$ktor_version")
     implementation("ch.qos.logback:logback-classic:1.2.6")
-
     testImplementation("io.ktor:ktor-server-tests:$ktor_version")
 }
 

@@ -1,21 +1,19 @@
 package com.example.plugins
 
 import io.ktor.application.*
-import io.ktor.response.*
+import io.ktor.html.*
 import io.ktor.routing.*
-import kotlinx.html.*
-import kotlinx.html.stream.appendHTML
+import kotlinx.html.body
+import kotlinx.html.div
 
 fun Application.configureRouting() {
 
     routing {
         get("/") {
-            call.respondTextWriter {
-                appendHTML().html {
-                    body {
-                        div {
-                            +"Hello world!"
-                        }
+            call.respondHtml {
+                body {
+                    div {
+                        +"Hello world!"
                     }
                 }
             }
