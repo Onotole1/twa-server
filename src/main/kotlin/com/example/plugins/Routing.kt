@@ -21,7 +21,7 @@ fun Application.configureRouting() {
             }
         }
 
-        route(".well-known") {
+        /*route(".well-known") {
             get("assetlinks.json") {
                 call.respond(
                     listOf(
@@ -38,6 +38,6 @@ fun Application.configureRouting() {
                     )
                 )
             }
-        }
+        }*/
     }
 }
